@@ -2,7 +2,7 @@ backend:
   name: github
   repo: yysfudhailbiniyadh/yysfudhailbiniyadh-site
   branch: main
-  base_url: https://auth.yourdomain.com
+  base_url: https://auth.penerbityayasanfudhailbiniyadh.com
   auth_endpoint: /
 
 media_folder: "assets/images"
