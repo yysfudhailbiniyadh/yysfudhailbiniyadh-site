@@ -4,37 +4,12 @@ title: "ABOUT"
 description: "お初にお目にかかります, お客様がお望みならどこでも駆けつけます"
 header-img: "img/post-bg-about.jpg"
 header-mask: 0.3
-multilingual: true
+multilingual: false
 nav-style: 'invert'
 ---
 
-<div class="en post-container">
-    {% capture about_en %}{% include about/en.md %}{% endcapture %}
-    {{ about_en | markdownify }}
-</div>
+I've been in the industry for about 3 years now. I've worked with many technologies, but I'm currently focusing on translation and spreading beautiful messages from around the world.
 
+I love to explore new things and share my knowledge with others.
 
-{% if site.disqus_username %}
-<!-- disqus 评论框 start -->
-<div class="comment">
-    <div id="disqus_thread" class="disqus-thread">
-
-    </div>
-</div>
-<!-- disqus 评论框 end -->
-
-<!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES * * */
-    var disqus_shortname = "{{site.disqus_username}}";
-    var disqus_identifier = "{{site.disqus_username}}/{{page.url}}";
-    var disqus_url = "{{site.url}}{{page.url}}";
-
-    (function () {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<!-- disqus 公共JS代码 end -->
-{% endif %}
+If you have any questions or want to collaborate, feel free to reach out!

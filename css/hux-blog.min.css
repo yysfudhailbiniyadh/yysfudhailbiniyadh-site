@@ -1,6 +1,6 @@
 /*!
  * Hux Blog v1.8.2 (http://huxpro.github.io)
- * Copyright 2024 Hux <huxpro@gmail.com>
+ * Copyright 2026 Hux <huxpro@gmail.com>
  */
 
 html,
@@ -14,10 +14,10 @@ html[data-theme="light"] {
   --surface0-color: #ccd0da;
   --overlay1-color: #8c8fa1;
   --overlay0-color: #9ca0b0;
-  --accent-color: #dc8a78;
-  --accent-color-background: #f6e2dd;
-  --accent-color-deep: #e64553;
-  --accent-color-deep-background: #f8ccd0;
+  --accent-color: #df8e1d;
+  --accent-color-background: #f0c68c;
+  --accent-color-deep: #fe640b;
+  --accent-color-deep-background: #ffc5a3;
   --hr-color: #bcc0cc;
   --link-color: #1e66f5;
   --code-color: #c7254e;
@@ -35,10 +35,10 @@ html[data-theme="dark"] {
   --surface0-color: #313244;
   --overlay1-color: #7f849c;
   --overlay0-color: #6c7086;
-  --accent-color: #cba6f7;
-  --accent-color-background: #26074b;
-  --accent-color-deep: #89b4fa;
-  --accent-color-deep-background: #021635;
+  --accent-color: #f9e2af;
+  --accent-color-background: #563d06;
+  --accent-color-deep: #fab387;
+  --accent-color-deep-background: #331502;
   --hr-color: #45475a;
   --link-color: #7287fd;
   --code-color: #e55074;
@@ -58,10 +58,10 @@ html[data-theme="dark"] {
     --surface0-color: #313244;
     --overlay1-color: #7f849c;
     --overlay0-color: #6c7086;
-    --accent-color: #cba6f7;
-    --accent-color-background: #26074b;
-    --accent-color-deep: #89b4fa;
-    --accent-color-deep-background: #021635;
+    --accent-color: #f9e2af;
+    --accent-color-background: #563d06;
+    --accent-color-deep: #fab387;
+    --accent-color-deep-background: #331502;
     --hr-color: #45475a;
     --link-color: #7287fd;
     --code-color: #e55074;
@@ -79,10 +79,10 @@ html[data-theme="dark"] {
     --surface0-color: #ccd0da;
     --overlay1-color: #8c8fa1;
     --overlay0-color: #9ca0b0;
-    --accent-color: #dc8a78;
-    --accent-color-background: #f6e2dd;
-    --accent-color-deep: #e64553;
-    --accent-color-deep-background: #f8ccd0;
+    --accent-color: #df8e1d;
+    --accent-color-background: #f0c68c;
+    --accent-color-deep: #fe640b;
+    --accent-color-deep-background: #ffc5a3;
     --hr-color: #bcc0cc;
     --link-color: #1e66f5;
     --code-color: #c7254e;

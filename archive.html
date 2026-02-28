@@ -68,6 +68,9 @@ https://github.com/kitian616/jekyll-TeXt-theme
 
 					<div class="post-preview item" data-tags="{{ _tags }}">
 						<a href="{{ _article.url | prepend: site.baseurl }}">
+							{% if _article.header-img %}
+							<div class="post-preview-thumbnail" style="background-image: url('{{ _article.header-img | prepend: site.baseurl }}')"></div>
+							{% endif %}
 							<h2 class="post-title">
 								{{ _article.title }}
 							</h2>

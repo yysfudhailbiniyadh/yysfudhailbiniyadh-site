@@ -5,8 +5,8 @@ backend:
   base_url: https://auth.penerbityayasanfudhailbiniyadh.com
   auth_endpoint: /auth
 
-media_folder: "assets/images"
-public_folder: "/assets/images"
+media_folder: "img"
+public_folder: "/img"
 
 collections:
   - name: "posts"
@@ -14,8 +14,58 @@ collections:
     folder: "_posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    summary: "{{title}} ({{date}})"
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Subtitle", name: "subtitle", widget: "string", required: false }
+      - { label: "Author", name: "author", widget: "string", default: "Hoshizora Chi" }
       - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Header Image", name: "header-img", widget: "image", required: false }
+      - { label: "Header Style", name: "header-style", widget: "select", options: ["text", "image"], default: "text" }
+      - { label: "Tags", name: "tags", widget: "list" }
       - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "pages"
+    label: "Pages"
+    files:
+      - name: "about"
+        label: "About Page"
+        file: "about.html"
+        fields:
+          - { label: "Layout", name: "layout", widget: "hidden", default: "page" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Subtitle (Description)", name: "description", widget: "string" }
+          - { label: "Header Image", name: "header-img", widget: "image" }
+          - { label: "Header Mask", name: "header-mask", widget: "number", value_type: "float", min: 0, max: 1, step: 0.1 }
+          - { label: "Nav Style", name: "nav-style", widget: "select", options: ["default", "invert"] }
+          - { label: "Body Content", name: "body", widget: "markdown" }
+
+  - name: "settings"
+    label: "Settings"
+    files:
+      - name: "config"
+        label: "Site Settings"
+        file: "_config.yml"
+        fields:
+          - { label: "Site Title", name: "title", widget: "string" }
+          - { label: "SEO Title", name: "SEOTitle", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Keywords", name: "keyword", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "URL", name: "url", widget: "string" }
+          - { label: "Base URL", name: "baseurl", widget: "string" }
+          - { label: "Main Header Image", name: "header-img", widget: "image" }
+          - { label: "GitHub Username", name: "github_username", widget: "string", required: false }
+          - { label: "Twitter Username", name: "twitter_username", widget: "string", required: false }
+          - { label: "Facebook Username", name: "facebook_username", widget: "string", required: false }
+          - { label: "LinkedIn Username", name: "linkedin_username", widget: "string", required: false }
+          - { label: "Zhihu Username", name: "zhihu_username", widget: "string", required: false }
+          - { label: "Weibo Username", name: "weibo_username", widget: "string", required: false }
+          - { label: "Enable RSS", name: "RSS", widget: "boolean", required: false }
+          - { label: "Enable Sidebar", name: "sidebar", widget: "boolean", required: false }
+          - { label: "Sidebar Avatar (Profile Pic)", name: "sidebar-avatar", widget: "image", required: false }
+          - { label: "Sidebar Bio (Short Bio)", name: "sidebar-about-description", widget: "text", required: false }
+          - { label: "Google Analytics ID", name: "ga_track_id", widget: "string", required: false }
+          - { label: "Google Analytics Domain", name: "ga_domain", widget: "string", required: false }
+          - { label: "Baidu Analytics ID", name: "ba_track_id", widget: "string", required: false }
