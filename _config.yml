@@ -4,13 +4,17 @@ description: Spreading beautiful messages from around the world
 keyword: buku anak, buku
 email: yysfudhailbiniyadh@gmail.com
 url: https://localhost:4000
-header-img: /img/potdarirumah.jpg
+header-img: img/potdarirumah.jpg
 github_username: ""
 twitter_username: ""
+instagram_username: ""
+facebook_username: ""
+linkedin_username: ""
+zhihu_username: ""
+weibo_username: ""
 future: true
 permalink: pretty
 markdown: kramdown
-facebook_username: false
 RSS: false
 favicon: img/favicon.ico
 kramdown:
@@ -23,8 +27,8 @@ kramdown:
       start_line: 1
 service-worker: true
 paginate: 10
+plugins: [jekyll-paginate]
 title: Penerbit Yayasan Fudhail Bin Iyadh
-linkedin_username: false
 featured-tags: false
 exclude:
   - less

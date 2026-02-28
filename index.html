@@ -6,24 +6,29 @@ nav-style: 'invert'
 
 {% for post in paginator.posts %}
 <div class="post-preview">
-	<a href="{{ post.url | prepend: site.baseurl }}">
-		{% if post.header-img %}
-		<div class="post-preview-thumbnail" style="background-image: url('{{ post.header-img | prepend: site.baseurl }}')"></div>
-		{% endif %}
-		<h2 class="post-title">{{ post.title }}</h2>
-		{% if post.subtitle %}
-		<h3 class="post-subtitle">{{ post.subtitle }}</h3>
-		{% endif %}
-		<div class="post-date">
-			<span><i class="fa-regular fa-calendar"></i></span>
-			<span>{{ post.date | date: "%B %-d, %Y" }}</span>
+	<div class="post-preview-container">
+		{% assign post_img = post.header-img | default: site.header-img %}
+		<a href="{{ post.url | prepend: site.baseurl }}" class="post-preview-thumbnail-link">
+			<div class="post-preview-thumbnail" style="background-image: url('{{ post_img | prepend: site.baseurl | prepend: "/" | replace: "//", "/" }}')"></div>
+		</a>
+		<div class="post-preview-content">
+			<a href="{{ post.url | prepend: site.baseurl }}">
+				<h2 class="post-title">{{ post.title }}</h2>
+				{% if post.subtitle %}
+				<h3 class="post-subtitle">{{ post.subtitle }}</h3>
+				{% endif %}
+				<div class="post-date">
+					<span><i class="fa-regular fa-calendar"></i></span>
+					<span>{{ post.date | date: "%B %-d, %Y" }}</span>
+				</div>
+				<div class="post-content-preview">
+					{% if post.lang == 'en' %} {{ post.content | strip_html |
+					truncate:300 }} {% else %} {{ post.content | strip_html |
+					truncate:280 }} {% endif %}
+				</div>
+			</a>
 		</div>
-		<div class="post-content-preview">
-			{% if post.lang == 'en' %} {{ post.content | strip_html |
-			truncate:300 }} {% else %} {{ post.content | strip_html |
-			truncate:280 }} {% endif %}
-		</div>
-	</a>
+	</div>
 
 	<div class="tags">
 		{% for tag in post.tags %}

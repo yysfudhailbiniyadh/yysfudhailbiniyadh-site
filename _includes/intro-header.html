@@ -8,7 +8,8 @@
     header.intro-header{
         margin-top: 55px;
         position: relative;
-        background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}');
+        {% assign header_img = page.header-img | default: site.header-img %}
+        background-image: url('{{ header_img | prepend: site.baseurl | prepend: "/" | replace: "//", "/" }}');
         background: {{ page.header-bg-css }};
     }
 
@@ -98,7 +99,8 @@
 {% endif %}
 
 {% if include.type == 'page' %}
-<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
+{% assign header_img = page.header-img | default: site.header-img %}
+<header class="intro-header" style="background-image: url('{{ header_img | prepend: site.baseurl | prepend: "/" | replace: "//", "/" }}')">
   <div class="header-mask"></div>
   <div class="container">
     <div class="row">
