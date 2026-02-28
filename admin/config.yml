@@ -56,6 +56,7 @@ collections:
           - { label: "URL", name: "url", widget: "string" }
           - { label: "Base URL", name: "baseurl", widget: "string" }
           - { label: "Main Header Image", name: "header-img", widget: "image" }
+          - { label: "Favicon", name: "favicon", widget: "image", required: false }
           - { label: "GitHub Username", name: "github_username", widget: "string", required: false }
           - { label: "Twitter Username", name: "twitter_username", widget: "string", required: false }
           - { label: "Facebook Username", name: "facebook_username", widget: "string", required: false }
