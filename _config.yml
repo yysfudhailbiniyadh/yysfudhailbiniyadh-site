@@ -1,29 +1,18 @@
-# Site settings
-title: "Hoshizora Chi"
-SEOTitle: Hoshizora Chi Blog
-header-img: img/AyakaCompressed.png
-favicon: img/favicon.ico
-email: ciii1@proton.me
-description: "Spreading beautiful messages from around the world"
-keyword: "hoshizora chi, chi, @ciii1, translation, japanese"
-url: "https://hoshizora-chi.github.io" # your host, for absolute URL
-baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
-
-# Publish posts or collection documents with a future date.
-future: true
-
-# SNS settings
-RSS: false
-github_username: hoshizora-chi
-twitter_username: _ciii1
-facebook_username: false
-linkedin_username: false
-
-# Build settings
-# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
 highlighter: rouge
+SEOTitle: Penerbit Yayasan Fudhail bin Iyadh
+description: Spreading beautiful messages from around the world
+keyword: buku anak, buku
+email: yysfudhailbiniyadh@gmail.com
+url: https://penerbityayasanfudhailbiniyadh.com
+header-img: /img/potdarirumah.jpg
+github_username: ""
+twitter_username: ""
+future: true
 permalink: pretty
 markdown: kramdown
+facebook_username: false
+RSS: false
+favicon: img/favicon.ico
 kramdown:
   input: GFM
   syntax_highlighter_opts:
@@ -34,6 +23,8 @@ kramdown:
       start_line: 1
 service-worker: true
 paginate: 10
+title: Penerbit Yayasan Fudhail Bin Iyadh
+linkedin_username: false
 featured-tags: false
 exclude:
   - less
@@ -43,4 +34,5 @@ exclude:
   - README.md
   - README.zh.md
 page-mathjax: false
+baseurl: https://penerbityayasanfudhailbiniyadh.com/
 anchorjs: true
