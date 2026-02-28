@@ -1,22 +1,24 @@
+plugins:
+  - jekyll-paginate
 highlighter: rouge
+keyword: buku anak, buku
+header-img: img/potdarirumah.jpg
+twitter_username: ""
+future: true
+title: Penerbit Yayasan Fudhail Bin Iyadh
 SEOTitle: Penerbit Yayasan Fudhail bin Iyadh
 description: Spreading beautiful messages from around the world
-keyword: buku anak, buku
 email: yysfudhailbiniyadh@gmail.com
-url: https://localhost:4000
-header-img: img/potdarirumah.jpg
+favicon: img/potdarirumah.jpg
 github_username: ""
-twitter_username: ""
 instagram_username: ""
+permalink: pretty
+url: https://penerbityayasanfudhailbiniyadh.com
 facebook_username: ""
-linkedin_username: ""
 zhihu_username: ""
 weibo_username: ""
-future: true
-permalink: pretty
 markdown: kramdown
 RSS: false
-favicon: img/favicon.ico
 kramdown:
   input: GFM
   syntax_highlighter_opts:
@@ -27,8 +29,7 @@ kramdown:
       start_line: 1
 service-worker: true
 paginate: 10
-plugins: [jekyll-paginate]
-title: Penerbit Yayasan Fudhail Bin Iyadh
+linkedin_username: ""
 featured-tags: false
 exclude:
   - less
