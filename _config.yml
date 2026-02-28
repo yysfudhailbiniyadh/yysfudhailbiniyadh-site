@@ -1,93 +1,50 @@
-# Site settings
-title: "Hoshizora Chi"
-SEOTitle: Hoshizora Chi Blog
-header-img: img/AyakaCompressed.png
-email: ciii1@proton.me
-description: "Spreading beautiful messages from around the world"
-keyword: "hoshizora chi, chi, @ciii1, translation, japanese"
-url: "https://hoshizora-chi.github.io" # your host, for absolute URL
-baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
-
-# Publish posts or collection documents with a future date.
-future: true
-
-# SNS settings
-RSS: false
-github_username: hoshizora-chi
-twitter_username: _ciii1
-facebook_username: false
-linkedin_username: false
-
-# Build settings
-# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+plugins:
+  - jekyll-paginate
 highlighter: rouge
+title: Penerbit Yayasan Fudhail bin Iyadh
+SEOTitle: Penerbit Yayasan Fudhail bin Iyadh
+description: Deskripsi
+keyword: penerbit
+email: yysfudhailbiniyadh@gmail.com
+url: https://penerbityayasanfudhailbiniyadh.com
+baseurl: https://penerbityayasanfudhailbiniyadh.com
+header-img: /img/AyakaCompressed.png
+github_username: ""
+twitter_username: ""
+future: true
+linkedin_username: false
+RSS: false
+sidebar: true
+sidebar-avatar: /img/AyakaCompressed.png
+sidebar-about-description: My mission is to spread the beauty of messages from around the world.
+ga_domain: huangxuan.me
+netease_comment: false
 permalink: pretty
-paginate: 10
-exclude:
-  [
-    "less",
-    "node_modules",
-    "Gruntfile.js",
-    "package.json",
-    "README.md",
-    "README.zh.md",
-  ]
-anchorjs: true # if you want to customize anchor. check out line:181 of `post.html`
-# If you have timezone issue (e.g. #68) in China, uncomment to use this:
-#timezone: CN
-
-# Gems
-# from PR#40, to support local preview for Jekyll 3.0
-# make sure you have this gem installed
-# `$ gem install jekyll-paginate`
-plugins: [jekyll-paginate]
-
-# Markdown settings
-# replace redcarpet to kramdown,
-# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
-# document: http://jekyllrb.com/docs/configuration/#kramdown
 markdown: kramdown
+facebook_username: false
+featured-condition-size: 0
+ga_track_id: UA-49627206-1
+chrome-tab-theme-color: "#df8e1d"
+friends:
+  - title: Leapofod
+    href: https://github.com/Leapofod
 kramdown:
-  input: GFM # use Github Flavored Markdown !important
+  input: GFM
   syntax_highlighter_opts:
     span:
       line_numbers: false
     block:
       line_numbers: true
       start_line: 1
-
-# Disqus settings
-# disqus_username: hynduf
-
-# Netease settings
-netease_comment: false
-
-# Analytics settings
-# Baidu Analytics
-# ba_track_id: [your track id]
-
-# Google Analytics
-ga_track_id: "UA-49627206-1" # Format: UA-xxxxxx-xx
-ga_domain: huangxuan.me
-
-# Sidebar settings
-sidebar: true # whether or not using Sidebar.
-sidebar-about-description: "My mission is to spread the beauty of messages from around the world."
-sidebar-avatar: /img/AyakaCompressed.png # use absolute URL, seeing it's used in both `/` and `/about/`
-
-# Featured Tags
-featured-tags: false # whether or not using Feature-Tags
-featured-condition-size: 0 # A tag will be featured if the size of it is more than this condition value
-
-# Progressive Web Apps
-chrome-tab-theme-color: "#df8e1d"
 service-worker: true
-
-# MathJax rendering for layout:page (e.g. post preview)
+paginate: 10
+featured-tags: false
+exclude:
+  - less
+  - node_modules
+  - Gruntfile.js
+  - package.json
+  - README.md
+  - README.zh.md
 page-mathjax: false
-
-# Friends
-friends:
-  [
-    { title: "Leapofod", href: "https://github.com/Leapofod" },
-  ]
+anchorjs: true
