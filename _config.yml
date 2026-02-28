@@ -3,7 +3,7 @@ SEOTitle: Penerbit Yayasan Fudhail bin Iyadh
 description: Spreading beautiful messages from around the world
 keyword: buku anak, buku
 email: yysfudhailbiniyadh@gmail.com
-url: https://penerbityayasanfudhailbiniyadh.com
+url: https://localhost:4000
 header-img: /img/potdarirumah.jpg
 github_username: ""
 twitter_username: ""
@@ -34,5 +34,4 @@ exclude:
   - README.md
   - README.zh.md
 page-mathjax: false
-baseurl: https://penerbityayasanfudhailbiniyadh.com/
 anchorjs: true

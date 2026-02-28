@@ -54,7 +54,6 @@ collections:
           - { label: "Keywords", name: "keyword", widget: "string" }
           - { label: "Email", name: "email", widget: "string" }
           - { label: "URL", name: "url", widget: "string" }
-          - { label: "Base URL", name: "baseurl", widget: "string" }
           - { label: "Main Header Image", name: "header-img", widget: "image" }
           - { label: "Favicon", name: "favicon", widget: "image", required: false }
           - { label: "GitHub Username", name: "github_username", widget: "string", required: false }
