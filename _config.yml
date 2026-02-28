@@ -1,24 +1,27 @@
 plugins:
   - jekyll-paginate
 highlighter: rouge
-keyword: buku anak, buku
-header-img: img/potdarirumah.jpg
-twitter_username: ""
-future: true
 title: Penerbit Yayasan Fudhail Bin Iyadh
 SEOTitle: Penerbit Yayasan Fudhail bin Iyadh
 description: Spreading beautiful messages from around the world
+keyword: buku anak, buku
 email: yysfudhailbiniyadh@gmail.com
-favicon: img/potdarirumah.jpg
-github_username: ""
-instagram_username: ""
-permalink: pretty
 url: https://penerbityayasanfudhailbiniyadh.com
+header-img: img/potdarirumah.jpg
+favicon: img/potdarirumah.jpg
+github_username: yysfudhailbiniyadh
+twitter_username: ""
+future: true
+instagram_username: ""
 facebook_username: ""
 zhihu_username: ""
 weibo_username: ""
-markdown: kramdown
 RSS: false
+sidebar-avatar: img/potdarirumah.jpg
+sidebar-about-description: Yayasan Fudhail bin Iyadh adalah yayasan yang
+  bergerak dalam bidang pendidikan dan penerbitan
+permalink: pretty
+markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter_opts:
